@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Much Does It Cost to Start a Website? — DIY Website Cost Calculator</title>
+<meta name="description" content="Work out the real cost of starting a website yourself: Year 1 prices and Year 2 renewal prices for a domain, hosting, SSL, and email — plus what hiring someone would cost. Prices checked November 2026.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Website<span>Cost</span>Calculator</div>
+    <nav>
+      <a href="#calculator">Calculator</a>
+      <a href="#explainer">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>How Much Does It Cost to Start a Website?</h1>
+    <p class="subtitle">Pick your site and how you want to build it. The calculator shows what you pay in Year 1, what renews in Year 2, and what hiring someone would cost instead — with real 2026 prices.</p>
+    <span class="checked-date">Prices checked November 2026</span>
+  </section>
+
+  <section class="calculator" id="calculator" aria-label="Website cost calculator">
+    <noscript><p>Please enable JavaScript to use the calculator. The short answer: a DIY WordPress site costs about $41 in Year 1 and about $71 a year after that.</p></noscript>
+
+    <div class="step">
+      <h2>Step 1 — What kind of website?</h2>
+      <p class="hint">Pick the closest match. It sets the defaults and the freelancer price range.</p>
+      <div class="cards">
+        <button type="button" class="card" data-type="blog"><strong>Personal Blog</strong><span>A blog for writing and sharing ideas.</span></button>
+        <button type="button" class="card selected" data-type="business"><strong>Small Business Website</strong><span>5 pages: home, about, services, contact, and one more.</span></button>
+        <button type="button" class="card" data-type="store"><strong>Online Store</strong><span>Sell products with a cart and checkout.</span></button>
+        <button type="button" class="card" data-type="portfolio"><strong>Portfolio</strong><span>Show your work: photos, design, or writing.</span></button>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>Step 2 — How do you want to build it?</h2>
+      <p class="hint">The DIY route uses self-hosted WordPress. The other two are shown for comparison.</p>
+      <div class="cards two-col">
+        <button type="button" class="card selected" data-method="diy"><strong>Do it yourself</strong><span>Self-hosted WordPress. You buy the domain and hosting.</span></button>
+        <button type="button" class="card" data-method="builder"><strong>Website builder</strong><span>Wix / Squarespace-like. One monthly plan covers everything.</span></button>
+        <button type="button" class="card" data-method="freelancer"><strong>Hire a freelancer</strong><span>Someone builds it for you. Shown for comparison.</span></button>
+      </div>
+    </div>
+
+    <div class="step" id="step-extras">
+      <h2>Step 3 — Optional extras (DIY only)</h2>
+      <p class="hint">Tick what you want. The totals update straight away.</p>
+      <div class="checks">
+        <label class="check"><input type="checkbox" data-extra="email" checked> <span>Business email <small>Your-name@yourdomain.com — about $12/year.</small></span></label>
+        <label class="check"><input type="checkbox" data-extra="theme"> <span>Paid theme <small>$50–$200 one-time. Free themes exist, but a paid theme usually looks better out of the box.</small></span></label>
+        <label class="check"><input type="checkbox" data-extra="backup"> <span>Backup plugin (Premium) <small>About $70/year. A free version covers basic scheduled backups.</small></span></label>
+      </div>
+    </div>
+
+    <div class="summary" id="summary-line" role="status">Loading prices…</div>
+
+    <div class="results">
+      <div class="result-block" id="table-year1"></div>
+      <div class="result-block" id="table-year2"></div>
+      <div class="result-block" id="table-compare"></div>
+    </div>
+  </section>
+
+  <section class="explainer" id="explainer">
+    <h2>How the numbers work</h2>
+
+    <h3>The renewal cliff, explained</h3>
+    <p>Most shared hosting is sold the way gym memberships are: a low price to get you in the door, then the regular price once you are a member. Namecheap&rsquo;s Stellar plan is a clear example &mdash; $26.88 for the first year, then $55.88 a year after that. The domain name works the same way: the first year is often discounted, and the renewal settles at the regular rate of about $15 a year. None of this is hidden, but it is easy to miss, because the big number on the sales page is always the first-year price. That is why this calculator shows Year 2 next to Year 1. The honest cost of a website is not the first bill &mdash; it is the bill you keep paying.</p>
+
+    <h3>Where these prices come from</h3>
+    <p>Every price on this page was checked on the merchant&rsquo;s own website in October and November 2026: the .com domain at $13.98 for the first year, the Stellar shared hosting plan at $26.88 for the first year and $55.88 at renewal, and business email at about $12 a year. SSL is $0 because hosts install a free Let&rsquo;s Encrypt certificate automatically. The paid theme range of $50&ndash;$200 and the backup plugin at about $70 a year are typical market prices for popular products, checked against vendor pages in November 2026. Prices change &mdash; hosts run sales and raise renewal rates &mdash; so treat every number here as a planning figure and check the merchant&rsquo;s page before buying.</p>
+
+    <h3>Why is the DIY first year so cheap?</h3>
+    <p>Three things keep the first-year number small. First, the software is free: WordPress itself costs nothing, and thousands of free themes and plugins cover the basics. Second, hosting companies compete hard for new customers, so the first year is sold below cost &mdash; the $26.88 Stellar plan is the clearest example. Third, the things people assume are expensive are often free: an SSL certificate costs $0, and a basic backup plugin costs $0 too. What you are really paying for in Year 1 is a domain name, a place to host the files, and optionally an email mailbox and a premium theme. That is the whole list &mdash; there is no hidden fourth item.</p>
+  </section>
+
+  <section class="explainer" id="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>Is SSL free?</h3>
+      <p>Yes. An SSL certificate &mdash; the thing that puts the padlock in the browser &mdash; is free through Let&rsquo;s Encrypt, and almost every shared host installs and renews it for you automatically. You should never pay for a basic SSL certificate on a personal blog or small business site. Paid certificates exist, but they are for sites that need extended validation or a warranty, which a small site does not.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where do I buy a domain?</h3>
+      <p>From a domain registrar &mdash; a company licensed to sell domain names. <a href="https://www.namecheap.com/domains/">Namecheap</a> is one of the best-known options, and the buy buttons on this page go to its domain, hosting, and email pages. You can also buy a domain from your hosting company, but keeping the domain with a registrar and the hosting with a host makes it easier to move later. A .com usually costs $13.98 for the first year and about $15 a year after that.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why is hosting so much cheaper in the first year than at renewal?</h3>
+      <p>Because the first year is a promotional price. Hosts discount the first term to win new customers, then charge the regular rate when you renew &mdash; for the Stellar plan, that means $26.88 the first year and $55.88 a year after. Some hosts raise prices by two or three times at renewal. It is not a trick, but it is the single most common surprise for new site owners, which is why this calculator shows the renewal number up front.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I build it myself if I have no technical skills?</h3>
+      <p>Yes, for a blog, a portfolio, or a small five-page business site. WordPress powers a large share of the web precisely because it does not require coding: you pick a theme, add pages, and write content in an editor that works like a word processor. The parts that feel technical &mdash; pointing the domain at the host and installing WordPress &mdash; are usually one-click steps in the host&rsquo;s dashboard, and most hosts have free support chat if you get stuck. An online store is the one case where you may want help, because payments and shipping add real complexity.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How much will I pay in the second year?</h3>
+      <p>For the basic DIY setup &mdash; domain, Stellar hosting, and free SSL &mdash; about $71 a year: roughly $15 for the domain and $55.88 for hosting. Add about $12 a year if you keep business email, and about $70 a year if you keep a premium backup plugin. A paid theme is a one-time purchase, so it costs nothing in Year 2. In other words, the second year is cheaper than the first once the theme is paid for &mdash; the hosting renewal jump is already included in that $71.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="privacy">
+  <div class="wrap">
+    <h2>Privacy policy</h2>
+    <p>This site does not collect, store, or send your data. There are no accounts and no cookies set by us. The calculator runs entirely in your browser &mdash; your choices never leave your device. Links to merchants open their own websites, which have their own privacy policies.</p>
+    <h2>Contact</h2>
+    <p>Questions or corrections? Email <a href="mailto:hello@goldenhourfilm.gumroad.com">hello@goldenhourfilm.gumroad.com</a>.</p>
+    <p class="fine-print">Prices checked November 2026. Verify on the merchant&rsquo;s page before buying.</p>
+  </div>
+</footer>
+
+<script src="js/pricing.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
