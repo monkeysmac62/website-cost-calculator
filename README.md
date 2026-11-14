@@ -39,10 +39,11 @@ python3 test/check-html.py  # tag balance, anchor targets, allowed URLs, word co
 
 ## Still TODO (do not ship as final)
 
-- `AFFILIATE_LINKS` in `js/app.js` currently holds plain direct Namecheap
-  product links. Replace with Impact affiliate links once approved, then add
-  the affiliate disclosure to the footer (deliberately absent now — these are
-  not affiliate links yet, so claiming they are would be false).
+- Per-page deep links: all three buy buttons currently use the one approved
+  Namecheap tracking link (lands on the domain-registration page; the 30-day
+  Impact cookie still attributes later purchases). Generate proper
+  hosting/email deep links in Impact (Create a Link -> Enter a Landing Page)
+  and point each button at its own link.
 - No domain yet (zero-cost rule). Free subdomain hosting works technically,
   but AdSense approval on a free subdomain is unlikely — domain is the only
   paid step, pending user approval.
