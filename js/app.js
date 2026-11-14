@@ -1,12 +1,17 @@
 // app.js — UI wiring for the DIY Website Cost Calculator.
 // Pricing math lives in pricing.js; this file only reads state and renders.
 
-// TODO: replace with Impact affiliate links once approved — do not claim these are affiliate links yet.
-// These are plain direct links to the merchant's product pages for now.
+// Namecheap affiliate programme approved via Impact 2026-11-13 (account 8196726).
+// All three buttons use the approved tracking link; it lands on Namecheap's
+// domain-registration page and the 30-day Impact cookie attributes any
+// Namecheap purchase made after the click. Per-page deep links (hosting/email
+// landing pages) still need generating in Impact: Create a Link -> Enter a
+// Landing Page. Until then, do not hand-build deep-link URLs.
+var NAMECHEAP_AFFILIATE_LINK = 'https://namecheap.pxf.io/c/8196726/1632743/5618';
 var AFFILIATE_LINKS = {
-  domain: 'https://www.namecheap.com/domains/',
-  hosting: 'https://www.namecheap.com/hosting/shared/',
-  email: 'https://www.namecheap.com/hosting/email/'
+  domain: NAMECHEAP_AFFILIATE_LINK,
+  hosting: NAMECHEAP_AFFILIATE_LINK,
+  email: NAMECHEAP_AFFILIATE_LINK
 };
 
 (function () {
@@ -57,7 +62,7 @@ var AFFILIATE_LINKS = {
   function buyButton(linkKey) {
     if (!linkKey || !AFFILIATE_LINKS[linkKey]) return '';
     return '<a class="buy-btn" href="' + AFFILIATE_LINKS[linkKey] +
-      '" target="_blank" rel="noopener">Get it on Namecheap</a>';
+      '" target="_blank" rel="sponsored noopener">Get it on Namecheap</a>';
   }
 
   function rowHtml(row) {
